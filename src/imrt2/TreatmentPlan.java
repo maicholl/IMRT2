@@ -179,7 +179,7 @@ public class TreatmentPlan implements Comparable<TreatmentPlan> {
             String[] auxReader=null;   
             File f= new File(beamsInfoDir);
             BufferedReader fileIn= new BufferedReader(new FileReader(f));
-            for (int i=0;i<360;i = i + step){
+            for (int i=0;i<360;i++){
                 line=fileIn.readLine();
                 auxReader = line.split("\t");
                 beamletsMap[i][0]=(int) Double.parseDouble(auxReader[0]); //beamIndex
